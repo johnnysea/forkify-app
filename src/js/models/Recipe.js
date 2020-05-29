@@ -52,7 +52,7 @@ export default class Recipe {
 
                 let count;
                 if (arrCount.length === 1) {
-                    count = arrIng[0].replace('-', '+');
+                    count = eval(arrIng[0].replace('-', '+'));
                 } else {
                     count = eval(arrIng.slice(0, unitIndex).join('+'));
                 }
@@ -75,8 +75,8 @@ export default class Recipe {
                     ingredient
                 }
             }
-
             return objIng;
+
         })
 
         this.ingredients = newIngredients;
