@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
-    "build": "webpck --mode producation",
+    "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open"
   },
   "author": "Johnny Shao",
