@@ -17,7 +17,6 @@ import * as likesView from './views/likesView';
  *  - Liked recipes
  */
 const state = {};
-window.state = state;
 
 /**
  * Search controller
@@ -149,7 +148,6 @@ elements.shopping.addEventListener('click', e => {
     }
 })
 
-
 elements.recipe.addEventListener('click', e => {
     if (e.target.matches('.btn-decrease, .btn-decrease *')) {
         if (state.recipe.servings > 1) {
@@ -165,9 +163,6 @@ elements.recipe.addEventListener('click', e => {
         controlLike();
     }
 });
-
-window.l = new List();
-
 
 elements.searchForm.addEventListener('submit', e => {
     e.preventDefault();
