@@ -24,6 +24,7 @@ npm run build
 npm run start
 ```
 
+Open http://localhost:8080 in a web browser
 
 <br/>
 
@@ -39,7 +40,6 @@ Run Docker container
 ```
 docker run -d --name forkify-app -p 8080:80 johnnysea/react-app-repo:forkify-app
 ```
-
 
 Open http://localhost:8080 in a web browser
 
