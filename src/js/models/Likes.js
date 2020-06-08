@@ -1,4 +1,4 @@
-export default class Likes {
+class Likes {
     constructor() {
         this.likes = [];
     }
@@ -17,7 +17,9 @@ export default class Likes {
 
     deleteLike(id) {
         const index = this.likes.findIndex(el => el.id === id);
-        this.likes.splice(index, 1);
+        if (index !== -1) {
+            this.likes.splice(index, 1);
+        }
 
         this.persistData();
     }
@@ -38,4 +40,5 @@ export default class Likes {
         const storage = JSON.parse(localStorage.getItem('likes'));
         if (storage) this.likes = storage;
     }
-}
+};
+module.exports = Likes;
