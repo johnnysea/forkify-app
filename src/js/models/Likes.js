@@ -1,4 +1,4 @@
-class Likes {
+export default class Likes {
     constructor() {
         this.likes = [];
     }
@@ -41,4 +41,3 @@ class Likes {
         if (storage) this.likes = storage;
     }
 };
-module.exports = Likes;

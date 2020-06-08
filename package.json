@@ -4,7 +4,7 @@
   "description": "forkify project",
   "main": "index.js",
   "scripts": {
-    "test": "mocha 'test/**/*.js' --recursive --require mock-local-storage",
+    "test": "mocha 'test/**/*.js' --recursive --require mock-local-storage --require esm",
     "dev": "webpack --mode development",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open --hot --host=0.0.0.0"
@@ -16,6 +16,7 @@
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "chai": "^4.2.0",
+    "esm": "^3.2.25",
     "html-webpack-plugin": "^4.3.0",
     "mocha": "^7.2.0",
     "mock-local-storage": "^1.1.12",

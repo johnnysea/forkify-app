@@ -1,4 +1,4 @@
-var Likes = require('../../src/js/models/Likes');
+import Likes from '../../src/js/models/Likes';
 var expect = require('chai').expect;
 require('mock-local-storage');
 
